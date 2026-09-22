@@ -1,0 +1,21 @@
+{
+  "name": "Vidriería de Emergencia",
+  "short_name": "Vidriería 24H",
+  "description": "Vidriería de emergencia a domicilio las 24 horas en Santiago, Chile.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EEF5FB",
+  "theme_color": "#08131F",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

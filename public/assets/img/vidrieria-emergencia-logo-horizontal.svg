@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hzRedGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D47"/>
+      <stop offset="50%" stop-color="#E5322D"/>
+      <stop offset="100%" stop-color="#B21E1A"/>
+    </linearGradient>
+    <radialGradient id="hzBadgeBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0F2D4A"/>
+      <stop offset="70%" stop-color="#08131F"/>
+      <stop offset="100%" stop-color="#04090F"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Left Insignia Icon (80x80 inside 100 high box) -->
+  <g transform="translate(10, 10)">
+    <!-- Base & Glow -->
+    <circle cx="40" cy="40" r="38" fill="url(#hzBadgeBg)" stroke="#E5322D" stroke-width="3"/>
+    <circle cx="40" cy="40" r="33" fill="none" stroke="#6DB1FF" stroke-width="1" stroke-dasharray="2 3" opacity="0.8"/>
+    
+    <!-- Top label -->
+    <path id="hzTopArc" d="M 16 40 A 24 24 0 0 1 64 40" fill="none"/>
+    <text font-family="'Poppins', sans-serif" font-weight="800" font-size="6.5" fill="#FFFFFF" letter-spacing="1">
+      <textPath href="#hzTopArc" startOffset="50%" text-anchor="middle">VIDRIERÍA</textPath>
+    </text>
+
+    <!-- Center 24 -->
+    <text x="40" y="47" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="#E5322D" stroke="#FFFFFF" stroke-width="1" text-anchor="middle" letter-spacing="-1">24</text>
+    
+    <!-- Horas tag -->
+    <rect x="24" y="50" width="32" height="9" rx="4.5" fill="#08131F" stroke="#3B82F6" stroke-width="0.8"/>
+    <text x="40" y="57" font-family="'Poppins', sans-serif" font-weight="800" font-size="5" fill="#6DB1FF" text-anchor="middle" letter-spacing="1">HORAS</text>
+
+    <!-- Bottom label -->
+    <path id="hzBotArc" d="M 64 40 A 24 24 0 0 1 16 40" fill="none"/>
+    <text font-family="'Poppins', sans-serif" font-weight="800" font-size="5.2" fill="#E2E8F0" letter-spacing="0.5">
+      <textPath href="#hzBotArc" startOffset="50%" text-anchor="middle">EMERGENCIA</textPath>
+    </text>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(105, 12)">
+    <!-- VIDRIERÍA -->
+    <text x="0" y="34" font-family="'Poppins', sans-serif" font-weight="800" font-size="30" fill="currentColor" letter-spacing="1">VIDRIERÍA</text>
+    
+    <!-- DE EMERGENCIA -->
+    <text x="0" y="58" font-family="'Poppins', sans-serif" font-weight="800" font-size="20" fill="#E5322D" letter-spacing="1.5">DE EMERGENCIA</text>
+    
+    <!-- Emergency 24/7 Subtitle -->
+    <g transform="translate(0, 68)">
+      <circle cx="4" cy="5" r="3.5" fill="#22C55E"/>
+      <text x="13" y="9" font-family="'Poppins', sans-serif" font-weight="600" font-size="10.5" fill="#3A4A5C" letter-spacing="0.8">A DOMICILIO 24 HORAS EN SANTIAGO</text>
+    </g>
+  </g>
+</svg>

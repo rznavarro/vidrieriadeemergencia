@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="badgeBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0F2D4A"/>
+      <stop offset="70%" stop-color="#08131F"/>
+      <stop offset="100%" stop-color="#04090F"/>
+    </radialGradient>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D47"/>
+      <stop offset="50%" stop-color="#E5322D"/>
+      <stop offset="100%" stop-color="#B21E1A"/>
+    </linearGradient>
+    <linearGradient id="chromeText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#E2E8F0"/>
+      <stop offset="55%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+    <filter id="neonRed" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="neonBlue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Circular text paths -->
+    <path id="topCurve" d="M 90 250 A 160 160 0 0 1 410 250" fill="none"/>
+    <path id="bottomCurve" d="M 405 250 A 155 155 0 0 1 95 250" fill="none"/>
+  </defs>
+
+  <!-- Outer Ring Shadow & Base -->
+  <circle cx="250" cy="250" r="240" fill="none" stroke="#08131F" stroke-width="12"/>
+  <circle cx="250" cy="250" r="236" fill="url(#badgeBg)"/>
+
+  <!-- Outer Red Neon Border -->
+  <circle cx="250" cy="250" r="232" fill="none" stroke="url(#redGlow)" stroke-width="10" filter="url(#neonRed)"/>
+  <!-- Dotted / Riveted Accent Ring -->
+  <circle cx="250" cy="250" r="214" fill="none" stroke="#6DB1FF" stroke-width="2" stroke-dasharray="3 7" opacity="0.65"/>
+  <circle cx="250" cy="250" r="198" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+
+  <!-- Top Text: VIDRIERÍA -->
+  <text font-family="'Poppins', 'Arial Black', sans-serif" font-weight="800" font-size="34" fill="url(#chromeText)" letter-spacing="8">
+    <textPath href="#topCurve" startOffset="50%" text-anchor="middle">
+      VIDRIERÍA
+    </textPath>
+  </text>
+
+  <!-- Stars on Left and Right -->
+  <g fill="#3B82F6" filter="url(#neonBlue)">
+    <!-- Left Star -->
+    <polygon points="78,250 84,236 98,236 86,245 91,259 78,250 65,259 70,245 58,236 72,236" stroke="#9FD8FF" stroke-width="1.5"/>
+    <!-- Right Star -->
+    <polygon points="422,250 428,236 442,236 430,245 435,259 422,250 409,259 414,245 402,236 416,236" stroke="#9FD8FF" stroke-width="1.5"/>
+  </g>
+
+  <!-- Central "24" -->
+  <g text-anchor="middle">
+    <!-- Red glow behind 24 -->
+    <text x="250" y="278" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="142" fill="#E5322D" filter="url(#neonRed)" letter-spacing="-2">24</text>
+    <!-- Core 24 with stroke -->
+    <text x="250" y="278" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="142" fill="#FFFFFF" stroke="#D42A26" stroke-width="6" paint-order="stroke fill" letter-spacing="-2">24</text>
+    <text x="250" y="278" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="142" fill="#E5322D" opacity="0.9" letter-spacing="-2">24</text>
+  </g>
+
+  <!-- "HORAS" Under 24 -->
+  <rect x="175" y="292" width="150" height="34" rx="17" fill="#08131F" stroke="#3B82F6" stroke-width="2"/>
+  <text x="250" y="316" font-family="'Poppins', sans-serif" font-weight="800" font-size="20" fill="#6DB1FF" text-anchor="middle" letter-spacing="4" filter="url(#neonBlue)">HORAS</text>
+
+  <!-- Inner border ring around center -->
+  <circle cx="250" cy="250" r="120" fill="none" stroke="rgba(229,50,45,0.25)" stroke-width="1.5"/>
+
+  <!-- Bottom Text: DE EMERGENCIA -->
+  <text font-family="'Poppins', 'Arial Black', sans-serif" font-weight="800" font-size="28" fill="url(#chromeText)" letter-spacing="5">
+    <textPath href="#bottomCurve" startOffset="50%" text-anchor="middle">
+      DE EMERGENCIA
+    </textPath>
+  </text>
+</svg>

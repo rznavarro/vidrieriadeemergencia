@@ -1,0 +1,6 @@
+{
+  "name": "Vidriería de Emergencia",
+  "description": "Vidriería de emergencia 24 horas en Santiago: reposición de vidrios, termopaneles, espejos, perforación y ventanas de aluminio a domicilio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
